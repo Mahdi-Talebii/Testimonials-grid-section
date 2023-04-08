@@ -1,0 +1,67 @@
+// General Styles
+
+:root {
+    font-size: 62.5% !important;
+}
+
+* {
+    font-size: 1.3rem;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Barlow Semi Condensed', sans-serif, cursive;
+}
+
+.centralize {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centralize-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.self-centralize {
+    align-self: center;
+    justify-self: center;
+}
+
+.mobile-content {
+    display: none;
+}
+
+.desktop-content {
+    display: inline-block;
+}
+
+
+
+@media all and (max-width:376px) {
+    .mobile-centralize {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .mobile-centralize-column {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .mobile-content {
+        display: inline-block !important;
+    }
+    
+    .desktop-content {
+        display: none !important;
+    }
+}
+
+@import 'body';

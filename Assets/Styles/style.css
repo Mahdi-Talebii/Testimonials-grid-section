@@ -1,0 +1,205 @@
+:root {
+  font-size: 62.5% !important;
+}
+
+* {
+  font-size: 1.3rem;
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "Barlow Semi Condensed", sans-serif, cursive;
+}
+
+.centralize {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centralize-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.self-centralize {
+  align-self: center;
+  justify-self: center;
+}
+
+.mobile-content {
+  display: none;
+}
+
+.desktop-content {
+  display: inline-block;
+}
+
+@media all and (max-width: 376px) {
+  .mobile-centralize {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile-centralize-column {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .mobile-content {
+    display: inline-block !important;
+  }
+  .desktop-content {
+    display: none !important;
+  }
+}
+body {
+  background-color: hsl(210, 46%, 95%);
+}
+
+p, .profile-details {
+  overflow: visible !important;
+}
+
+section[role=main] {
+  display: grid;
+  grid-template-columns: repeat(1fr, 4);
+  -moz-column-gap: 3%;
+       column-gap: 3%;
+  row-gap: 3%;
+  width: 80%;
+  height: 80vh;
+  margin-top: 5%;
+}
+section[role=main] .profiles {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+}
+section[role=main] .profiles .profile-details {
+  align-self: flex-start;
+  justify-self: flex-start;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 1.5rem;
+}
+section[role=main] .profiles .profile-details .profile-img {
+  border-radius: 50%;
+  margin-right: 1.5rem;
+  width: 4rem;
+}
+section[role=main] .profiles .profile-details div {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+section[role=main] .profiles .profile-details div .name-white {
+  color: hsl(0, 0%, 81%);
+}
+section[role=main] .profiles .profile-details div .name-black {
+  color: black;
+}
+section[role=main] .profiles .profile-details div .user-condition {
+  font-size: 1.2rem;
+}
+section[role=main] .profiles .profile-details div .user-condition-black {
+  color: hsla(0, 0%, 0%, 0.5);
+}
+section[role=main] .profiles .profile-details div .user-condition-white {
+  color: hsla(0, 0%, 81%, 0.5);
+}
+section[role=main] .profiles .overall-comment {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+section[role=main] .profiles .overall-comment-white {
+  color: white;
+}
+section[role=main] .profiles .overall-comment-black {
+  color: black;
+}
+section[role=main] .profiles .user-status {
+  font-size: 1.4rem;
+}
+section[role=main] .profiles .user-status-black {
+  color: hsla(0, 0%, 0%, 0.7);
+}
+section[role=main] .profiles .user-status-white {
+  color: hsla(0, 0%, 81%, 0.7);
+}
+section[role=main] .profile-1 {
+  background-color: hsl(263, 55%, 52%);
+  grid-column: 1/3;
+  position: relative;
+}
+section[role=main] .profile-1 .qout-bg-img {
+  position: absolute;
+  top: 0%;
+  right: 5%;
+  z-index: 1;
+}
+section[role=main] .profile-1 .overall-comment {
+  z-index: 2;
+}
+section[role=main] .profile-2 {
+  background-color: hsl(217, 19%, 35%);
+  grid-column: 3/4;
+}
+section[role=main] .profile-3 {
+  background-color: white;
+  grid-column: 1/2;
+}
+section[role=main] .profile-4 {
+  background-color: hsl(219, 29%, 14%);
+  grid-column: 2/4;
+}
+section[role=main] .profile-5 {
+  background-color: white;
+  grid-column: 4/5;
+  grid-row: 1/3;
+}
+section[role=main] .profile-5 .user-status {
+  width: 85%;
+}
+
+@media all and (max-width: 376px) {
+  * {
+    overflow: visible !important;
+  }
+  img {
+    overflow: hidden !important;
+  }
+  section[role=main] {
+    width: 85%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 5rem;
+  }
+  .profiles {
+    margin-bottom: 2rem;
+  }
+  .profile-1 {
+    flex: 2;
+  }
+  .profile-2 {
+    flex: 1;
+  }
+  .profile-3 {
+    flex: 1;
+  }
+  .profile-4 {
+    flex: 2;
+  }
+  .profile-5 {
+    flex: 2;
+  }
+}/*# sourceMappingURL=style.css.map */
